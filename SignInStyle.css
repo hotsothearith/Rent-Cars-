@@ -1,0 +1,186 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+	font-family: "Poppins", sans-serif;
+}
+
+.container {
+	position: fixed;
+	width: 100%;
+    height: 100vh; /* Ensure the container takes up the full viewport height */
+	/* display: flex; */
+}
+
+.container > .contain-header {
+	position: fixed;
+	width: 100%;
+	height: 25%;
+}
+
+.container > .contain-header > .header {
+	padding-left: 70px;
+	padding-right: 70px;
+	/* text-align: center; */
+    width: 100%;
+    /* height: 20%;  */
+    /* background-color: blue; */
+	display: flex;
+}
+
+/* ====================Logo================== */
+.container > .contain-header > .header > .logo{
+	width: 10%;
+	height: 100%;
+	/* background-color: aqua; */
+	justify-content: center;
+	align-content: center;
+	display: flex;
+}
+
+.container > .contain-header > .header > .logo > p{
+	color: #007bff;
+	padding-top: 20px;
+	text-align: center;
+}
+
+/* =========================Menu===================== */
+.container > .contain-header > .header > .menu {
+	width: 65%;
+	height: 100%;
+	/* background-color: chartreuse; */
+
+}
+
+
+.container > .contain-header > .header > .menu > ul{
+	display: flex;
+	list-style: none;
+	display: flex;
+	justify-content: right;
+	align-items: right;
+}
+
+.container > .contain-header > .header > .menu > ul > li{
+	position: relative;
+	cursor: pointer;
+	margin: 20px;
+	margin-left: 40px;
+}
+
+.container > .contain-header > .header > .menu > ul > li::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -2px;
+    width: 0%;
+    height: 2px;
+    background-color: #007bff;
+    transition: width 0.3s ease-in-out;
+}
+
+.container > .contain-header > .header > .menu > ul > li:hover::after {
+    width: 100%;
+}
+
+/* ==================Button================ */
+.container > .contain-header > .header > .btn {
+	margin-right: 20px;
+	width: 25%;
+	height: 100%;
+	/* background-color: brown; */
+	display: flex;
+	justify-content: right;
+	align-items: right;
+}
+
+.container > .contain-header > .header > .btn > button{
+	margin-top: 15px;
+	margin-left: 10px;
+	width: 80px;
+	height: 30px;
+	border: none;
+	border-radius: 5px;
+	cursor: pointer;
+}
+
+.container > .contain-header > .header > .btn > .sign-in {
+	background-color: rgba(128, 128, 128, 0.173);;
+}
+
+.container > .contain-header > .header > .btn > .sign-up {
+	background-color: #007bff;
+	color: white;
+}
+
+
+/* ===========================Body====================== */
+.container > .contain-body {
+	padding-top: 90px;
+	width: 100%;
+	height: 100%;
+	/* background-color: green; */
+	justify-items: center;
+	align-items: center;
+}
+
+.container > .contain-body > .body-form {
+	padding: 50px;
+	width: 400px;
+	height: 73vh;
+	background-color: rgba(128, 128, 128, 0.083);
+	border: 1px solid #ccc;
+	border-radius: 15px;
+	box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.container > .contain-body > .body-form > h2 {
+	margin-bottom: 15px;
+}
+
+
+.container > .contain-body > .body-form > .input-form > input {
+	padding-left: 10px;
+	margin-top: 5px;
+	width: 100%;
+	height: 6vh;
+	border: none;
+	border-radius: 3px;
+}
+
+.container > .contain-body > .body-form > .input-form > .btn-sign-in {
+	margin-top: 30px;
+	width: 100%;
+	height: 6vh;
+	background-color: #007bff;
+	border: none;
+	border-radius: 5px;
+	cursor: pointer;
+	color: white;
+}
+
+.container > .contain-body > .body-form > .input-form > p {
+	margin-top: 7px;
+	text-align: center;
+}
+
+.container > .contain-body > .body-form > .input-form > .btn-cancel {
+	margin-top: 7px;
+	width: 100%;
+	height: 6vh;
+	background-color: white;
+	border: none;
+	border-radius: 5px;
+	cursor: pointer;
+}
+
+.container > .contain-body > .body-form > .input-form > .check{
+	display: flex;
+	margin-top: 10px;
+	justify-content: space-between;
+	align-content: space-between;
+}
+
+.container > .contain-body > .body-form > .input-form > .check > .check-box input {
+	cursor: pointer;
+}
